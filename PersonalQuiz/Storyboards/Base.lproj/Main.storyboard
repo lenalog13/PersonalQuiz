@@ -312,7 +312,10 @@
                             <constraint firstItem="wqG-5A-ucQ" firstAttribute="trailing" secondItem="6pP-VI-zgc" secondAttribute="trailing" constant="20" id="Kyc-hl-YMt"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Результаты" id="Q77-xT-4oE"/>
+                    <navigationItem key="navigationItem" title="Результаты" id="Q77-xT-4oE">
+                        <barButtonItem key="leftBarButtonItem" title="uygyu" id="deA-oz-gjk"/>
+                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="done" id="iLO-Na-BB1"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2V3-qo-Wk2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
