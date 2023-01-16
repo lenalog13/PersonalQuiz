@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		4DA5FBE92975CB6C00B04F4C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA5FBE82975CB6C00B04F4C /* AppDelegate.swift */; };
 		4DA5FBEB2975CB6C00B04F4C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA5FBEA2975CB6C00B04F4C /* SceneDelegate.swift */; };
-		4DA5FBED2975CB6C00B04F4C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA5FBEC2975CB6C00B04F4C /* ViewController.swift */; };
+		4DA5FBED2975CB6C00B04F4C /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA5FBEC2975CB6C00B04F4C /* QuestionViewController.swift */; };
 		4DA5FBF02975CB6C00B04F4C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DA5FBEE2975CB6C00B04F4C /* Main.storyboard */; };
 		4DA5FBF22975CB6D00B04F4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DA5FBF12975CB6D00B04F4C /* Assets.xcassets */; };
 		4DA5FBF52975CB6D00B04F4C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DA5FBF32975CB6D00B04F4C /* LaunchScreen.storyboard */; };
+		4DA5FC032975CDF900B04F4C /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA5FC022975CDF900B04F4C /* Question.swift */; };
+		4DA5FC052975E5C300B04F4C /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA5FC042975E5C300B04F4C /* ResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4DA5FBE52975CB6C00B04F4C /* PersonalQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PersonalQuiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DA5FBE82975CB6C00B04F4C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4DA5FBEA2975CB6C00B04F4C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4DA5FBEC2975CB6C00B04F4C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4DA5FBEC2975CB6C00B04F4C /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
 		4DA5FBEF2975CB6C00B04F4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4DA5FBF12975CB6D00B04F4C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4DA5FBF42975CB6D00B04F4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4DA5FBF62975CB6D00B04F4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DA5FC022975CDF900B04F4C /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		4DA5FC042975E5C300B04F4C /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,49 @@
 		4DA5FBE72975CB6C00B04F4C /* PersonalQuiz */ = {
 			isa = PBXGroup;
 			children = (
-				4DA5FBE82975CB6C00B04F4C /* AppDelegate.swift */,
-				4DA5FBEA2975CB6C00B04F4C /* SceneDelegate.swift */,
-				4DA5FBEC2975CB6C00B04F4C /* ViewController.swift */,
-				4DA5FBEE2975CB6C00B04F4C /* Main.storyboard */,
-				4DA5FBF12975CB6D00B04F4C /* Assets.xcassets */,
-				4DA5FBF32975CB6D00B04F4C /* LaunchScreen.storyboard */,
+				4DA5FBFD2975CCAE00B04F4C /* ViewControllers */,
+				4DA5FC012975CD2100B04F4C /* Models */,
+				4DA5FBFC2975CC8C00B04F4C /* Storyboards */,
+				4DA5FBFE2975CCC600B04F4C /* SupportFlies */,
 				4DA5FBF62975CB6D00B04F4C /* Info.plist */,
 			);
 			path = PersonalQuiz;
+			sourceTree = "<group>";
+		};
+		4DA5FBFC2975CC8C00B04F4C /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				4DA5FBEE2975CB6C00B04F4C /* Main.storyboard */,
+				4DA5FBF32975CB6D00B04F4C /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		4DA5FBFD2975CCAE00B04F4C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				4DA5FBEC2975CB6C00B04F4C /* QuestionViewController.swift */,
+				4DA5FC042975E5C300B04F4C /* ResultViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		4DA5FBFE2975CCC600B04F4C /* SupportFlies */ = {
+			isa = PBXGroup;
+			children = (
+				4DA5FBE82975CB6C00B04F4C /* AppDelegate.swift */,
+				4DA5FBEA2975CB6C00B04F4C /* SceneDelegate.swift */,
+				4DA5FBF12975CB6D00B04F4C /* Assets.xcassets */,
+			);
+			path = SupportFlies;
+			sourceTree = "<group>";
+		};
+		4DA5FC012975CD2100B04F4C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4DA5FC022975CDF900B04F4C /* Question.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +176,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4DA5FBED2975CB6C00B04F4C /* ViewController.swift in Sources */,
+				4DA5FC052975E5C300B04F4C /* ResultViewController.swift in Sources */,
+				4DA5FBED2975CB6C00B04F4C /* QuestionViewController.swift in Sources */,
+				4DA5FC032975CDF900B04F4C /* Question.swift in Sources */,
 				4DA5FBE92975CB6C00B04F4C /* AppDelegate.swift in Sources */,
 				4DA5FBEB2975CB6C00B04F4C /* SceneDelegate.swift in Sources */,
 			);
@@ -302,9 +342,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = lenalog.PersonalQuiz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -330,9 +373,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = lenalog.PersonalQuiz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
