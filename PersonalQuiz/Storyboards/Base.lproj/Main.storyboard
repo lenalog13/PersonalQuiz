@@ -128,7 +128,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TNS-fF-idS">
                                         <rect key="frame" x="0.0" y="84" width="280" height="40.5"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Button">
+                                        <buttonConfiguration key="configuration" style="plain" title="Ответить">
                                             <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle2"/>
                                         </buttonConfiguration>
                                         <connections>
@@ -231,6 +231,9 @@
                                         <buttonConfiguration key="configuration" style="plain" title="Button">
                                             <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle2"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="singleAnswerButtonPressed:" destination="r0F-IB-4hD" eventType="touchUpInside" id="3le-vZ-uSR"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dT2-zO-MmF">
                                         <rect key="frame" x="96.5" y="111" width="87.5" height="40.5"/>
@@ -238,6 +241,9 @@
                                         <buttonConfiguration key="configuration" style="plain" title="Button">
                                             <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle2"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="singleAnswerButtonPressed:" destination="r0F-IB-4hD" eventType="touchUpInside" id="0Cg-FK-RPY"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f8i-V6-nKl">
                                         <rect key="frame" x="96.5" y="166.5" width="87.5" height="40.5"/>
@@ -245,6 +251,9 @@
                                         <buttonConfiguration key="configuration" style="plain" title="Button">
                                             <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle2"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="singleAnswerButtonPressed:" destination="r0F-IB-4hD" eventType="touchUpInside" id="sfR-xL-EeW"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -342,7 +351,6 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Результаты" id="Q77-xT-4oE">
-                        <barButtonItem key="leftBarButtonItem" title="uygyu" id="deA-oz-gjk"/>
                         <barButtonItem key="rightBarButtonItem" style="done" systemItem="done" id="iLO-Na-BB1">
                             <connections>
                                 <action selector="doneButtonPressed:" destination="YOG-SY-mwV" id="5o8-ms-3b9"/>
@@ -356,7 +364,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2V3-qo-Wk2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2676" y="-2"/>
+            <point key="canvasLocation" x="2730" y="-3"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="i60-i0-62x">
