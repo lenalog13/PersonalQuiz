@@ -38,19 +38,14 @@ final class ResultViewController: UIViewController {
 
 extension ResultViewController {
     private func summarizing() {
-        let catCount = answerChosen.filter { $0.type == .cat }.count
-        let dogCount = answerChosen.filter { $0.type == .dog }.count
-        let rabbitCount = answerChosen.filter { $0.type == .rabbit }.count
-        let tartleCount = answerChosen.filter { $0.type == .turtle }.count
         
-        if catCount >= dogCount, catCount >= rabbitCount, catCount >= tartleCount {
-            result = .cat
-        } else if dogCount >= rabbitCount, dogCount >= tartleCount {
-            result = .dog
-        } else if rabbitCount >= tartleCount {
-            result = .rabbit
-        } else {
-            result = .turtle
+        let animals = answerChosen.map { $0.type }
+        var countAnimals: [AnimalType: Int] = [:]
+        
+        for animal in animals {
+            countAnimals[animal, default: 0] += 1
         }
+        
+        result = countAnimals.sorted { $0.value > $1.value }.first?.key
     }
 }
